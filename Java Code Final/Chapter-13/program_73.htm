@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Clock</title>
+<script>
+    function startTime() {
+        var today = new Date();
+        var hour = today.getHours();
+        var min = today.getMinutes();
+        var sec = today.getSeconds();
+        
+        min = checkTime(min);
+        sec = checkTime(sec);
+        document.getElementById('divClock').innerHTML = hour + ":" + min + ":" + sec;
+        t = setTimeout(function() { startTime() }, 500);
+    }
+
+    function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+</script>
+</head>
+
+<body onload="startTime()">
+<div id="divClock"></div>
+</body>
+</html>
+

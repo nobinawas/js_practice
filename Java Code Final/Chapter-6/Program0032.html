@@ -1,0 +1,35 @@
+<htlml>
+<head>
+<title>While Example</title>
+<script type="text/JavaScript">
+
+function CalculateGrade()
+{
+var number=document.getElementById("txtNumber").value;
+number=parseInt(number);
+
+var i;
+var fact=1;
+for(i=1;i<=number;i++)
+{
+
+fact=fact*i;
+
+if(i==6)
+{
+break;
+}
+
+}
+alert(" The Factrial of "+i+ " is = " +fact);
+}
+
+</script>
+
+<head>
+<body>
+
+Input  Number: <input type="text" id="txtNumber" /><br />
+<button onclick="CalculateGrade();">OK</button>
+</body>
+</htlml>

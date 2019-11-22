@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body onload="myFunction()">
+<script>
+
+function myFunction()
+{
+var num = 1234.567895
+var exp=num.toExponential();
+var Fix=num.toFixed(2);
+var Per=num.toPrecision(2);
+var Str = num.toString();
+var Val = num.valueOf(); 
+
+document.write(exp);
+document.write(Fix);
+document.write("<br>");
+document.write(Per);
+document.write("<br>");
+document.write(Str);
+document.write("<br>");
+document.write(Val); 
+}
+</script>
+
+</body>
+</html>
+

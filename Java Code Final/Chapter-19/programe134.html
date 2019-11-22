@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function ImagMap(val)
+{
+document.getElementById("text1").value=val;
+}
+function MousOut(val)
+{
+document.getElementById("text1").value=val;
+}
+</script>
+<p>Click on the image:</p>
+<input type="text" id="text1" size="20" />
+
+<img src="images/bappi.jpg" width="150" height="150"  usemap="#mymap">
+
+<map name="mymap">
+  <area shape="rect" coords="0,80,40,120" href="ear.html" onMouseOver="ImagMap('This is Image of Ear')" onMouseOut="MousOut('')" target="_blank" > 
+  <area shape="circle" coords="95,90,10" href="lip.html" onMouseOver="ImagMap('This is Image of Lip')" onMouseOut="MousOut('')" target="_blank" >  
+  <area shape="circle" coords="90,70,10" href="nose.html" onMouseOver="ImagMap('This is Image of Nose')" onMouseOut="MousOut('')" target="_blank" >  
+  </map>
+
+</body>
+</html>
+
+
+
+

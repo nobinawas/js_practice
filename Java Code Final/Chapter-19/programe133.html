@@ -1,0 +1,34 @@
+    <!DOCTYPE html>  
+    <html lang="en">  
+    <head>  
+    <meta charset="utf-8">  
+    <title>JavaScript form validation - check whether a number has a decimal part not.</title>  
+    
+    </head>  
+    <body onload='document.form1.text1.focus()'>  
+    
+    <h2>Check  number Is decimal or not</h2>  
+    <form name="form1" action="#">      
+    <input type='text' name='text1'/> 
+    <input type="submit" name="submit" value="Submit" onclick="CheckDecimal(document.form1.text1)"/>
+     
+    </form>  
+    
+    <script>
+	function CheckDecimal(inputtxt)  
+{   
+var decimal=  /^[0-9]+(\.[0-9]+)+$/;  
+if(inputtxt.value.match(decimal))   
+{   
+alert('You have Enter a Decimal Number');  
+return true;  
+}  
+else  
+{   
+alert('This is not a Decimal No');  
+return false;  
+}  
+} 
+	</script>  
+    </body>  
+    </html>  

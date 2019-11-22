@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> text field and submit button </title>
+<script>
+function validateForm()
+{
+var first=document.forms["FirstForm"]["FirstName"].value;
+var last=document.forms["FirstForm"]["LastName"].value;
+  if (first==null || first=="")
+  {
+  alert("Please Input First Name");
+  return false;
+  }
+  
+  if (last==null || last=="")
+  {
+  alert("Please Input Last Name");   
+  return false;
+  }
+  
+  else
+  {
+  alert("Your Name Is : " + first +' '+ last)
+  
+  }
+  
+  
+  
+}
+</script>
+
+
+</head>
+
+<body>
+
+<form name="FirstForm" onsubmit="return validateForm()" method="post">
+<input type="text" name="FirstName" size="30" value="" > Type your First Name: <br>
+<input type="text" name="LastName" size="30"> Type your Last Name: <br>
+
+
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
+

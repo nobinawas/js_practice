@@ -1,0 +1,36 @@
+<htlml>
+<head>
+<title>While Example</title>
+
+
+<script type="text/JavaScript">
+
+function CalculateSum()
+{
+var number=document.getElementById("txtNumber").value;
+number=parseInt(number);
+var i=1;
+sum=0;
+document.write("This Seris is : ");
+while(i<=number)
+{
+sum=sum+i;
+document.write(" "+i);
+
+i++;
+
+}
+document.write(" = "+sum);
+
+
+}
+
+</script>
+
+<head>
+<body>
+
+Input  Number: <input type="text" id="txtNumber" /><br />
+<button onclick="CalculateSum();">OK</button>
+</body>
+</htlml>

@@ -1,0 +1,36 @@
+	  
+	  
+	  
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<title>JavaScript form validation - checking all letters</title>  
+
+</head>  
+<body onload='document.form1.text1.focus()'>  
+
+<h2>Enter your Name and Press Submit</h2>  
+<form name="form1" action="#">  
+<input type='text' name='text1'/> 
+<input type="submit" name="submit" value="Submit" onclick="allLetter(document.form1.text1)" /> 
+
+</form>  
+
+<script>
+function allLetter(inputtxt)  
+      {  
+       var letters = /^[A-Za-z]+$/;  
+       if(inputtxt.value.match(letters))  
+         {  
+		 alert("You Entered Letters");  
+          return true;  
+         }  
+       else  
+         {  
+         alert("Please Input Only Letter");  
+         return false;  
+         }  
+      }
+</script>  
+</body>  
+</html> 

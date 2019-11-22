@@ -1,0 +1,53 @@
+<htlml>
+<head>
+<title>Switch Case Example</title>
+
+
+<script type="text/JavaScript">
+
+function CalculateDay()
+{
+var day=document.getElementById("txtDay").value;
+day=parseInt(day);   // to Convert day into integer Value
+
+switch (day)
+{
+
+case 1:
+  x="Today it's SaturDay";
+  break;
+case 2:
+  x="Today it's SunDay";
+  break;
+case 3:
+  x="Today it's MonDay";
+  break;
+case 4:
+  x="Today it's TuesDay";
+  break;
+case 5:
+  x="Today it's WendsDay";
+  break;
+case 6:
+  x="Today it's ThirsDay";
+  break;
+  case 6:
+  x="Today it's FriDay";
+  break;
+  default:
+  x="Input Number 1 to 7";
+ 
+}
+alert(x);
+
+}
+
+</script>
+
+<head>
+<body>
+
+Input Day Number: <input type="text" id="txtDay" /><br />
+<button onclick="CalculateDay();">OK</button>
+</body>
+</htlml>

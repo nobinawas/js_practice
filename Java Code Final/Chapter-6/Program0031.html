@@ -1,0 +1,31 @@
+<htlml>
+<head>
+<title>For Loop Example</title>
+
+
+<script type="text/JavaScript">
+
+function CalculateFact()
+{
+var number=document.getElementById("txtNumber").value;
+number=parseInt(number);
+var fact=1;
+var i;
+
+for(i=1;i<=number;i++)
+{
+fact=fact*i;
+
+}
+alert(" The Factrial of "+number+ " is = " +fact);
+}
+
+</script>
+
+<head>
+<body>
+
+Input  Number: <input type="text" id="txtNumber" /><br />
+<button onclick="CalculateFact();">OK</button>
+</body>
+</htlml>

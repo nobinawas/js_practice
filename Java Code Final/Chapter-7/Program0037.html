@@ -1,0 +1,32 @@
+<htlml>
+<head>
+<title>Function Argument Example</title>
+
+
+<script type="text/JavaScript">
+
+function PromptTest()
+{
+var x;
+
+var name=prompt("Please enter your name","Bappi");
+
+if (name!=null)
+  {
+  x="Hello " + name + "!";
+  document.getElementById("txtName").value=x;
+  }
+
+}
+
+</script>
+
+<head>
+<body>
+
+<input type="text" id="txtName">
+
+<button onclick="PromptTest();">Click Me</button>
+
+</body>
+</htlml>

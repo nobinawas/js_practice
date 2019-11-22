@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript">
+var x=prompt("Enter your Age:","");
+try
+  {
+  if(x>18)
+    {
+    throw "Err1";
+    }
+  else if(x<18)
+    {
+    throw "Err2";
+    }
+  else if(isNaN(x))
+    {
+    throw "Err3";
+    }
+  }
+catch(err)
+  {
+  if(err=="Err1")
+    {
+    alert("You are a adult Person.");
+    }
+  if(err=="Err2")
+    {
+    alert("You are too young.");
+    }
+  if(err=="Err3")
+    {
+    alert("Error! The value is not a number.");
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>JavaScript Math max(x) method example</title>
+<script language="JavaScript">
+
+    function math_Function() {
+        var item1 = document.getElementById('inputbox1').value;
+        var item2 = document.getElementById('inputbox2').value;
+        var item3 = document.getElementById('inputbox3').value;
+        var item4 = document.getElementById('inputbox4').value;
+        var result = Math.max(item1, item2, item3, item4);
+        document.getElementById('outputbox').value = result;
+    }
+</script>
+</head>
+<body>
+<h5>Example of Math max(x1,x2,x3.....) method</h5>
+
+Input1  :<input type="text" id="inputbox1" value=""/>
+<br>
+Input2  :<input type="text" id="inputbox2" value=""/>
+<br>
+Input2  :<input type="text" id="inputbox3" value=""/>
+<br>
+Input2  :<input type="text" id="inputbox4" value=""/>
+<br>
+Output :<input type="text" id="outputbox" value=""/>
+<br>
+<input type="button" onClick="math_Function();" value="Get Result"/>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>JavaScript Math pow(x) method example</title>
+<script language="JavaScript">
+
+    function math_Function() {
+        var item1 = document.getElementById('inputbox1').value;
+        var item2 = document.getElementById('inputbox2').value;
+        var result = Math.pow(item1, item2);
+        document.getElementById('outputbox').value = result;
+    }
+</script>
+</head>
+<body>
+<h5>Example of Math pow() method</h5>
+
+Input1  :<input type="text" id="inputbox1" value=""/>
+<br>
+Input2  :<input type="text" id="inputbox2" value=""/>
+<br>
+Output  :<input type="text" id="outputbox" value=""/>
+<br>
+<input type="button" onClick="math_Function();" value="Get Result"/>
+</body>
+</html>

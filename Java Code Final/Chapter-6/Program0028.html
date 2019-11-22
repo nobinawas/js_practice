@@ -1,0 +1,36 @@
+<htlml>
+<head>
+<title>While Example</title>
+
+
+<script type="text/JavaScript">
+
+function CalculateLoop()
+{
+var number=document.getElementById("txtNumber").value;
+number=parseInt(number);
+var i=1;
+
+while(i<=number)
+{
+
+document.write("The Line Number is "+i);
+document.write("<br/>");
+
+i++;
+
+}
+
+
+
+}
+
+</script>
+
+<head>
+<body>
+
+Input  Number: <input type="text" id="txtNumber" /><br />
+<button onclick="CalculateLoop();">OK</button>
+</body>
+</htlml>

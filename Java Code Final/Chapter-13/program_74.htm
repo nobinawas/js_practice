@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>SetDate</title>
+<script>
+    var today = new Date();
+    var day = today.getDay();
+    var AddDay = today.setDate(day + 3);
+    var SubDate = today.setDate(day - 3);    
+    document.write("After 3 Day :" + AddDay);
+    document.write("<br>");
+    document.write("Before 3 Day :" + SubDate);
+   
+</script>
+</head>
+
+<body onload="startTime()">
+<div id="divClock"></div>
+</body>
+</html>
+

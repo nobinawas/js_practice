@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>JavaScript array push() method example</title>
+<script language="JavaScript">
+	var dynamic_array = new Array();
+	function add_item() {
+	    var item = document.getElementById('inputbox').value;
+		dynamic_array.push(item);
+		document.getElementById('outputbox').value = dynamic_array;
+	}
+</script>
+</head>
+<body>
+<h5>Example of array's push() method</h5>
+
+Input Item<input type="text" id="inputbox" value=""/>
+<br>
+Output Item<input type="text" id="outputbox" value=""/>
+<br>
+<input type="button" onClick="add_item();" value="Push"/>
+</body>
+</html>

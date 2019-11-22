@@ -1,0 +1,33 @@
+<htlml>
+<head>
+<title>Function Return  Example</title>
+
+
+<script type="text/JavaScript">
+
+function CalculateSum(Num1, Num2)
+{
+
+var sum=0;
+if(parseInt(Num1)>parseInt(Num2))
+{
+return sum;
+}
+else
+{
+sum=parseInt(Num1)+parseInt(Num2);
+return sum;
+}
+
+}
+
+</script>
+
+<head>
+<body>
+
+Input  Number1: <input type="text" id="txtNumber1" /><br />
+Input  Number2: <input type="text" id="txtNumber2" /><br />
+<button onclick="alert(CalculateSum(document.getElementById('txtNumber1').value, document.getElementById('txtNumber2').value))">OK</button>
+</body>
+</htlml>

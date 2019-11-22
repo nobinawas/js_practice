@@ -1,0 +1,40 @@
+<htlml>
+<head>
+<title>While Example</title>
+
+
+<script type="text/JavaScript">
+
+function CalculateSum()
+{
+var number=document.getElementById("txtNumber").value;
+number=parseInt(number);
+
+var i;
+var sum=0;
+
+
+for(i=1;i<=number;i++)
+{
+
+
+
+if(i==5)
+{
+
+continue;
+}
+sum=sum+i;
+}
+alert(" The Summation of "+number+ " is = " +sum);
+}
+
+</script>
+
+<head>
+<body>
+
+Input  Number: <input type="text" id="txtNumber" /><br />
+<button onclick="CalculateSum();">OK</button>
+</body>
+</htlml>

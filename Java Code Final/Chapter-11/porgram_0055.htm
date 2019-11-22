@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body onload="myFunction()">
+<script>
+Number.prototype.myMethod=function()
+{
+alert(this.valueOf()/2);
+}
+
+function myFunction()
+{
+var d = new Number(420);
+d.myMethod();
+}
+</script>
+
+</body>
+</html>
+
